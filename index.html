@@ -776,13 +776,7 @@
 
                 // or enable responsive functionality:
                 GitHubCalendar(".calendar", "y2kanthale", { responsive: true });
-
-                // Use a proxy
-                GitHubCalendar(".calendar", "y2kanthale", {
-                  proxy(username) {
-                    return fetch(`https://your-proxy.com/github?user=${username}`)
-                  }
-                }).then(r => r.text())
+                
               </script>
             </div> <!-- end column -->
 
